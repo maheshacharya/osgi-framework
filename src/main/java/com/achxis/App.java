@@ -57,7 +57,7 @@ public class App {
 
     }
 
-    private static String jarPath = "/Users/achxis-macbook/projects/osgi/bundles/test-bundle/target/test-bundle-1.0-SNAPSHOT.jar";
+    private static String jarPath = System.getProperty("user.home")+"/temp/test-bundle-1.0-SNAPSHOT.jar";
 
     public void addBundles() throws BundleException {
         BundleContext context = framework.getBundleContext();
